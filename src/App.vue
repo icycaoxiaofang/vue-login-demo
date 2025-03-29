@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside v-show="$route.name!=='login'" width="200px">
-        <Menu v-show="$route.name!=='login'"></Menu>
+      <el-aside v-if="!$route.meta.showNav" width="200px">  <!--这个meta属性用来隐藏导航栏，登录才可见--> 
+        <Menu v-if="!$route.meta.showNav"></Menu>
       </el-aside>
       <el-main>
         <router-view></router-view>

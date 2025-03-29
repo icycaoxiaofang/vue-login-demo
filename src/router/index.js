@@ -18,13 +18,18 @@ const router = new VueRouter({
             redirect: '/login',  // 重定向
         },
         {
-            name: 'login',
             path: '/login',     // 路径
-            component: Login    // 跳转到的组件
+            component: Login,    // 跳转到的组件
+            meta:{
+                showNav: true
+              }
         },
         {
             path: '/register',     
-            component: Register    
+            component: Register,
+            meta:{
+                showNav: true
+              }    
         },
         {
             path: '/home',     
