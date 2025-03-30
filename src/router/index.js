@@ -5,8 +5,6 @@ import VueRouter from "vue-router"
 import Login from '../views/login/Login'
 import Register from '../views/register/Register'
 import Home from '../views/home/Home'
-import kubernetes from '../views/kubernetes/Kubernetes.vue'
-import jenkins from '../views/jenkins/Jenkins.vue'
 import { Message } from "element-ui"
 
 // 创建并暴露一个路由器
@@ -34,14 +32,6 @@ const router = new VueRouter({
         {
             path: '/home',     
             component: Home
-        },
-        {
-            path: '/Kubernetes',     
-            component: kubernetes
-        },
-        {
-            path: '/Jenkins',     
-            component: jenkins
         },
     ]
 })
