@@ -15,12 +15,12 @@
           </el-menu-item>
           <el-menu-item index="2">
             <el-button @click="jenkins">
-              <i class="el-icon-s-cooperation"></i>开发管理
+              <i class="el-icon-s-cooperation"></i>开发相关管理
             </el-button>
           </el-menu-item>
           <el-menu-item index="3">
             <el-button @click="kubernetes">
-              <i class="el-icon-s-help"></i>运行状态管理
+              <i class="el-icon-s-help"></i>运行管理
             </el-button>
           </el-menu-item>
     </el-menu>
@@ -37,13 +37,13 @@ export default {
         console.log(key, keyPath);
       },
       kubernetes () {
-        window.location.href = 'https:\\192.168.31.236:31772'
+        window.location.href = 'http://192.168.31.236:1180'
       },
       jenkins () {
-        window.location.href = 'https:\\163.com'
+        window.location.href = 'http://192.168.31.236:31092/'
       },
       grafana() {
-        window.location.href = 'https:\\163.com'
+        window.location.href = 'http://192.168.31.236:30301/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&refresh=5s&from=now-1h&to=now'
       }
     }
   }
