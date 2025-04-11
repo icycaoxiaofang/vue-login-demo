@@ -43,7 +43,7 @@ export default {
         window.location.href = 'http://192.168.31.236:31092/'
       },
       grafana() {
-        window.location.href = 'http://192.168.31.236:30301/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&refresh=5s&from=now-1h&to=now'
+        window.location.href = 'http://192.168.31.236:30301/d/WduxB70Hk/use-method-node?orgId=1&refresh=10s&from=1744013457068&to=1744017057068'
       }
     }
   }
